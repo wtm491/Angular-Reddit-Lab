@@ -23,7 +23,7 @@ function redditFeed(RedditService, $q) {
               
               ctrl.feed.push(childObj);
   
-              if ( index === (children.length = 10) ){
+              if ( index === (children.length = 12) ){
                 resolve();
               }
   
@@ -49,7 +49,7 @@ function redditFeed(RedditService, $q) {
           <img ng-src="{{post.img}}"></img></a>
           <h2>{{post.title}}</h2>
           <a href="https://www.reddit.com/{{post.permalink}}">
-          <div id="link-container">Link: {{post.permalink}}</div></a>
+          <div id="link-container">Visit Here:{{post.permalink}}</div></a>
         </div>
       </div>`, 
     controller: redditFeed,
