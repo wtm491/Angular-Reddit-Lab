@@ -20,10 +20,10 @@ function redditFeed(RedditService, $q) {
                 permalink: child.data.permalink
               }
               // console.log(childObj.img); 
-  
+              
               ctrl.feed.push(childObj);
   
-              if ( index === (children.length -1) ){
+              if ( index === (children.length = 10) ){
                 resolve();
               }
   
@@ -32,10 +32,10 @@ function redditFeed(RedditService, $q) {
     });
   }
   
-    // ctrl.fetchAwwSubreddit()
-    // .then( () => {
-    //   alert('completed');
-    // })
+    ctrl.fetchAwwSubreddit()
+   
+
+    
   }
     
 
@@ -46,7 +46,7 @@ function redditFeed(RedditService, $q) {
       <div ng-repeat="post in $ctrl.feed">
         <div id="box">
           <a href="https://www.reddit.com/{{post.permalink}">
-          <img src="{{post.img}}"></img></a>
+          <img ng-src="{{post.img}}"></img></a>
           <h2>{{post.title}}</h2>
           <a href="https://www.reddit.com/{{post.permalink}}">
           <div id="link-container">Link: {{post.permalink}}</div></a>

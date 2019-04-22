@@ -1,0 +1,45 @@
+html {
+    background: linear-gradient(purple, blue, purple); 
+}
+
+
+h1 {
+    font-family: "Pacifico"; 
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+#link-container.ng-binding {
+    margin-top: 20px;
+}
+
+.main-container {
+    font-family: "Arvo"; 
+    color: white;
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.ng-isolate-scope {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    word-wrap: break-word;
+   
+}
+
