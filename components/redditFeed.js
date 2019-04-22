@@ -45,9 +45,13 @@ function redditFeed(RedditService, $q) {
     template: `
       <div ng-repeat="post in $ctrl.feed">
         <div id="box">
+        <div class = "image">
           <a href="https://www.reddit.com/{{post.permalink}">
           <img ng-src="{{post.img}}"></img></a>
+        </div>
+        <div class = "title">
           <h2>{{post.title}}</h2>
+        </div>
           <a href="https://www.reddit.com/{{post.permalink}}">
           <div id="link-container">Visit Here:{{post.permalink}}</div></a>
         </div>
